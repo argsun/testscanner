@@ -270,9 +270,7 @@ $(function() {
       var code = result.codeResult.code;
 var validCode=code.toString();
 var WaliCode=validCode.endsWith("101");
-var p1=document.getElementById("p1")
-p1.innerHTML=WaliCode.value
-if (code.length===17 && !isNaN(code) && ( WaliCode=true)){
+if (code.length===17 && !isNaN(code) && ){
   ScanCode=code
       if (App.lastResult !== code) {
           App.lastResult = code;
