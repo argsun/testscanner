@@ -134,6 +134,7 @@
 #interactive.viewport > canvas, #interactive.viewport > video {
     max-width: 100%;
     width: 100%;
+    height: 200px;
   
 }
 
