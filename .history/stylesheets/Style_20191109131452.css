@@ -31,7 +31,7 @@
 .close {
   color: #aaaaaa;
   float: left;
-  font-size: 5px;
+  font-size: 8px;
   font-weight: bold;
 }
 
@@ -135,7 +135,7 @@
     max-width: 100%;
     width: 100%;
     max-height: 200px;
-  
+    height: 1;
 }
 
 canvas.drawing, canvas.drawingBuffer {

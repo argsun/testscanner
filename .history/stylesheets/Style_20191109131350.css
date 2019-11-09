@@ -31,7 +31,7 @@
 .close {
   color: #aaaaaa;
   float: left;
-  font-size: 5px;
+  font-size: 8px;
   font-weight: bold;
 }
 
@@ -134,8 +134,7 @@
 #interactive.viewport > canvas, #interactive.viewport > video {
     max-width: 100%;
     width: 100%;
-    max-height: 200px;
-  
+    max
 }
 
 canvas.drawing, canvas.drawingBuffer {
