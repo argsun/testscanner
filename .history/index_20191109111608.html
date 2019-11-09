@@ -79,17 +79,12 @@ if ($_SESSION['USER_NO'] > 0 && HaveMenuAccess('Mobile')) {
       <!-- Modal content -->
       <div class="modal-content">
         <span class="close">&times;</span>
-        <div id="interactive" class="viewport"></div>
-        <div id="result_strip">
-            <ul class="thumbnails"></ul>
-        </div>
-        
         <div class="controls">
         <fieldset class="input-group">
           
         </fieldset>
         <fieldset class="reader-config-group">
-            <label  >
+            <label>
                 <span>نوع بارکد</span>
                 <select name="decoder_readers">
                     <option value="code_128" selected="selected">Code 128</option>
@@ -106,7 +101,7 @@ if ($_SESSION['USER_NO'] > 0 && HaveMenuAccess('Mobile')) {
                     <option value="code_93">Code 93</option>
                 </select>
             </label>
-            <label  >
+            <label  style="display: none">
                 <span>وضوح ( عرض )</span>
                 <select name="input-stream_constraints">
                     <option value="320x240">320px</option>
@@ -117,7 +112,7 @@ if ($_SESSION['USER_NO'] > 0 && HaveMenuAccess('Mobile')) {
                     <option value="1920x1080">1920px</option>
                 </select>
             </label>
-            <label  >
+            <label  style="display: none">
                 <span>اندازه بارکد</span>
                 <select name="locator_patch-size">
                     <option value="x-small">خیلی کوچک</option>
@@ -127,11 +122,11 @@ if ($_SESSION['USER_NO'] > 0 && HaveMenuAccess('Mobile')) {
                     <option value="x-large">خیلی بزرگ</option>
                 </select>
             </label>
-            <label  >
+            <label>
                 <span>یافتن سریع بارکد</span>
                 <input type="checkbox" checked="checked" name="locator_half-sample" />
             </label>
-            <label  >
+            <label  style="display: none">
                 <span>تعداد پردازنده</span>
                 <select name="numOfWorkers">
                     <option value="0">0</option>
@@ -156,7 +151,10 @@ if ($_SESSION['USER_NO'] > 0 && HaveMenuAccess('Mobile')) {
             </label>
         </fieldset>
     </div>
-  
+    <div id="result_strip">
+        <ul class="thumbnails"></ul>
+    </div>
+    <div id="interactive" class="viewport"></div>
 </section>
 </div>
 

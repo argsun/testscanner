@@ -218,7 +218,7 @@ $(function() {
               type : "LiveStream",
               constraints: {
                   width: {min: 640},
-                  height: {min: 1080},
+                  height: {min: 480},
                   aspectRatio: {min: 1, max: 100},
                   facingMode: "environment" // or user
               }
@@ -227,7 +227,7 @@ $(function() {
               patchSize: "medium",
               halfSample: true
           },
-          numOfWorkers: 4,
+          numOfWorkers: 2,
           frequency: 20,
           decoder: {
               readers : [{
