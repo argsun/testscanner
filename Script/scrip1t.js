@@ -275,7 +275,7 @@ if (code.length===17 && !isNaN(code) && code.endsWith("101")){
           var $node = null, canvas = Quagga.canvas.dom.image;
 
           $node = $('<li><div class="thumbnail"><div class="imgWrapper"><img /></div><div class="caption"><h4 class="code"></h4></div></div></li>');
-         // $node.find("img").attr("src", canvas.toDataURL());
+          $node.find("img").attr("src", canvas.toDataURL());
           $node.find("h4.code").html(code);
           $("#result_strip ul.thumbnails").prepend($node);
           var audio = new Audio("success.wav");
