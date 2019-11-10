@@ -90,14 +90,12 @@ if ($_SESSION['USER_NO'] > 0 && HaveMenuAccess('Mobile')) {
                 <span>چراغ قوه</span>
                 <input type="checkbox" name="settings_torch" />
             </label>
-            <label>
-                <span>دوربین</span>
-                <select name="input-stream_constraints" id="deviceSelection">
-                </select>
-            </label>
             <label style="display: none">
                 <span>زوم</span>
                 <select name="settings_zoom"></select>
+            </label>
+            
+            
             </label>
             <label  >
                 <span>یافتن سریع بارکد</span>
@@ -113,9 +111,8 @@ if ($_SESSION['USER_NO'] > 0 && HaveMenuAccess('Mobile')) {
                     <option value="8">8</option>
                 </select>
             </label>
-        </fieldset>
-    <fieldset class="SettingModal">
-             <label style="display: none"  >
+  
+             <label style="display: none" >
                 <span>نوع بارکد</span>
                 <select name="decoder_readers">
                     <option value="code_128" selected="selected">Code 128</option>
@@ -153,8 +150,8 @@ if ($_SESSION['USER_NO'] > 0 && HaveMenuAccess('Mobile')) {
                     <option value="x-large">خیلی بزرگ</option>
                 </select>
             </label>
+          
         </fieldset>
-        
         <div id="result_strip">
             <ul class="thumbnails"></ul>
         </div>
