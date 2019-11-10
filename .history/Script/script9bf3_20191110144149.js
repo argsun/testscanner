@@ -269,8 +269,8 @@ $(function() {
   Quagga.onDetected(function(result) {
       var code = result.codeResult.code;
 
-
-if (code.length===17 && !isNaN(code) && code.endsWith("101")){
+p1.innerHTML=WaliCode.value
+if (code.length===17 && !isNaN(code) && ( WaliCode=true)){
   ScanCode=code
       if (App.lastResult !== code) {
           App.lastResult = code;
