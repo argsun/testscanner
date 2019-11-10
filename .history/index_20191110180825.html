@@ -80,13 +80,20 @@ if ($_SESSION['USER_NO'] > 0 && HaveMenuAccess('Mobile')) {
       <div class="modal-content">
         <span class="close">&times;بسته شدن</span>
         <div id="interactive" class="viewport"></div>
- 
+        <div id="result_strip">
+            <ul class="thumbnails"></ul>
+        </div>
+        
         <div class="controls">
         <fieldset class="input-group">
           
         </fieldset>
         <fieldset class="reader-config-group">
-           
+            <label>
+                <span>دوربین</span>
+                <select name="input-stream_constraints" id="deviceSelection">
+                </select>
+            </label>
             <label style="display: none">
                 <span>زوم</span>
                 <select name="settings_zoom"></select>
@@ -95,9 +102,42 @@ if ($_SESSION['USER_NO'] > 0 && HaveMenuAccess('Mobile')) {
                 <span>چراغ قوه</span>
                 <input type="checkbox" name="settings_torch" />
             </label>
-            <label>
-                <span>دوربین</span>
-                <select name="input-stream_constraints" id="deviceSelection">
+             <label  disp>
+                <span>نوع بارکد</span>
+                <select name="decoder_readers">
+                    <option value="code_128" selected="selected">Code 128</option>
+                    <option value="code_39">Code 39</option>
+                    <option value="code_39_vin">Code 39 VIN</option>
+                    <option value="ean">EAN</option>
+                    <option value="ean_extended">EAN-extended</option>
+                    <option value="ean_8">EAN-8</option>
+                    <option value="upc">UPC</option>
+                    <option value="upc_e">UPC-E</option>
+                    <option value="codabar">Codabar</option>
+                    <option value="i2of5">I2of5</option>
+                    <option value="2of5">Standard 2 of 5</option>
+                    <option value="code_93">Code 93</option>
+                </select>
+            </label>
+            <label  >
+                <span>وضوح ( عرض )</span>
+                <select name="input-stream_constraints">
+                    <option value="320x240">320px</option>
+                    <option selected="selected" value="640x480">640px</option>
+                    <option value="800x600">800px</option>
+                    <option value="1280x720">1280px</option>
+                    <option value="1600x960">1600px</option>
+                    <option value="1920x1080">1920px</option>
+                </select>
+            </label>
+            <label  >
+                <span>اندازه بارکد</span>
+                <select name="locator_patch-size">
+                    <option value="x-small">خیلی کوچک</option>
+                    <option value="small">کوچک</option>
+                    <option selected="selected" value="medium">متوسط</option>
+                    <option value="large">بزرگ</option>
+                    <option value="x-large">خیلی بزرگ</option>
                 </select>
             </label>
             <label  >
@@ -115,50 +155,7 @@ if ($_SESSION['USER_NO'] > 0 && HaveMenuAccess('Mobile')) {
                 </select>
             </label>
   
-             <label style="display: none" >
-                <span>نوع بارکد</span>
-                <select name="decoder_readers">
-                    <option value="code_128" selected="selected">Code 128</option>
-                    <option value="code_39">Code 39</option>
-                    <option value="code_39_vin">Code 39 VIN</option>
-                    <option value="ean">EAN</option>
-                    <option value="ean_extended">EAN-extended</option>
-                    <option value="ean_8">EAN-8</option>
-                    <option value="upc">UPC</option>
-                    <option value="upc_e">UPC-E</option>
-                    <option value="codabar">Codabar</option>
-                    <option value="i2of5">I2of5</option>
-                    <option value="2of5">Standard 2 of 5</option>
-                    <option value="code_93">Code 93</option>
-                </select>
-            </label>
-            <label style="display: none" >
-                <span>وضوح ( عرض )</span>
-                <select name="input-stream_constraints">
-                    <option value="320x240">320px</option>
-                    <option selected="selected" value="640x480">640px</option>
-                    <option value="800x600">800px</option>
-                    <option value="1280x720">1280px</option>
-                    <option value="1600x960">1600px</option>
-                    <option value="1920x1080">1920px</option>
-                </select>
-            </label>
-            <label  style="display: none">
-                <span>اندازه بارکد</span>
-                <select name="locator_patch-size">
-                    <option value="x-small">خیلی کوچک</option>
-                    <option value="small">کوچک</option>
-                    <option selected="selected" value="medium">متوسط</option>
-                    <option value="large">بزرگ</option>
-                    <option value="x-large">خیلی بزرگ</option>
-                </select>
-            </label>
-          
         </fieldset>
-        <div id="result_strip">
-            <ul class="thumbnails"></ul>
-        </div>
-        
     </div>
   
 </section>
@@ -292,7 +289,7 @@ if ($_SESSION['USER_NO'] > 0 && HaveMenuAccess('Mobile')) {
         var current_time = "<?php echo date('Y-m-d H:i:s') ?>";
         var current_user = "<?php echo $_SESSION['USER_NO'] ?>";
     </script>
-    <script src="Script/scrip1t.js"></script>
+    <script src="Script/script9bf3.js?15"></script>
 
     
 <!-- Mirrored from portal.chaparnet.local/mobile/test/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 05 Nov 2019 14:05:43 GMT -->

@@ -271,7 +271,7 @@ canvas.drawing, canvas.drawingBuffer {
 
   /* line 24, ../sass/phone/_viewport.scss */
   #result_strip ul.thumbnails > li {
-    width: 75px;
+    width: 150px;
   }
   /* line 27, ../sass/phone/_viewport.scss */
   #result_strip ul.thumbnails > li .thumbnail .imgWrapper {
@@ -283,6 +283,6 @@ canvas.drawing, canvas.drawingBuffer {
   #result_strip ul.thumbnails > li .thumbnail .imgWrapper img {
     margin-top: -25px;
     width: 65px;
-    height: 90px;
+    height: 90p;
   }
 }

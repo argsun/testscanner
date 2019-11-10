@@ -80,21 +80,16 @@ if ($_SESSION['USER_NO'] > 0 && HaveMenuAccess('Mobile')) {
       <div class="modal-content">
         <span class="close">&times;بسته شدن</span>
         <div id="interactive" class="viewport"></div>
- 
+        <div id="result_strip">
+            <ul class="thumbnails"></ul>
+        </div>
+        
         <div class="controls">
         <fieldset class="input-group">
           
         </fieldset>
         <fieldset class="reader-config-group">
            
-            <label style="display: none">
-                <span>زوم</span>
-                <select name="settings_zoom"></select>
-            </label>
-            <label style="display: none">
-                <span>چراغ قوه</span>
-                <input type="checkbox" name="settings_torch" />
-            </label>
             <label>
                 <span>دوربین</span>
                 <select name="input-stream_constraints" id="deviceSelection">
@@ -155,10 +150,6 @@ if ($_SESSION['USER_NO'] > 0 && HaveMenuAccess('Mobile')) {
             </label>
           
         </fieldset>
-        <div id="result_strip">
-            <ul class="thumbnails"></ul>
-        </div>
-        
     </div>
   
 </section>
@@ -292,7 +283,7 @@ if ($_SESSION['USER_NO'] > 0 && HaveMenuAccess('Mobile')) {
         var current_time = "<?php echo date('Y-m-d H:i:s') ?>";
         var current_user = "<?php echo $_SESSION['USER_NO'] ?>";
     </script>
-    <script src="Script/scrip1t.js"></script>
+    <script src="Script/script9bf3.js?15"></script>
 
     
 <!-- Mirrored from portal.chaparnet.local/mobile/test/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 05 Nov 2019 14:05:43 GMT -->

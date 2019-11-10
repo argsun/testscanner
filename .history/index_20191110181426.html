@@ -80,7 +80,10 @@ if ($_SESSION['USER_NO'] > 0 && HaveMenuAccess('Mobile')) {
       <div class="modal-content">
         <span class="close">&times;بسته شدن</span>
         <div id="interactive" class="viewport"></div>
- 
+        <div id="result_strip">
+            <ul class="thumbnails"></ul>
+        </div>
+        
         <div class="controls">
         <fieldset class="input-group">
           
@@ -113,10 +116,7 @@ if ($_SESSION['USER_NO'] > 0 && HaveMenuAccess('Mobile')) {
                     <option selected="selected" value="4">4</option>
                     <option value="8">8</option>
                 </select>
-            </label>
-  
-             <label style="display: none" >
-                <span>نوع بارکد</span>
+                 <span>نوع بارکد</span>
                 <select name="decoder_readers">
                     <option value="code_128" selected="selected">Code 128</option>
                     <option value="code_39">Code 39</option>
@@ -131,6 +131,10 @@ if ($_SESSION['USER_NO'] > 0 && HaveMenuAccess('Mobile')) {
                     <option value="2of5">Standard 2 of 5</option>
                     <option value="code_93">Code 93</option>
                 </select>
+            </label>
+  
+             <label style="display: none" >
+               dddd
             </label>
             <label style="display: none" >
                 <span>وضوح ( عرض )</span>
@@ -155,10 +159,6 @@ if ($_SESSION['USER_NO'] > 0 && HaveMenuAccess('Mobile')) {
             </label>
           
         </fieldset>
-        <div id="result_strip">
-            <ul class="thumbnails"></ul>
-        </div>
-        
     </div>
   
 </section>
@@ -292,7 +292,7 @@ if ($_SESSION['USER_NO'] > 0 && HaveMenuAccess('Mobile')) {
         var current_time = "<?php echo date('Y-m-d H:i:s') ?>";
         var current_user = "<?php echo $_SESSION['USER_NO'] ?>";
     </script>
-    <script src="Script/scrip1t.js"></script>
+    <script src="Script/script9bf3.js?15"></script>
 
     
 <!-- Mirrored from portal.chaparnet.local/mobile/test/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 05 Nov 2019 14:05:43 GMT -->
