@@ -228,7 +228,7 @@ $(function() {
               halfSample: true
           },
           numOfWorkers: 4,
-          frequency: max,
+          frequency: 20,
           decoder: {
               readers : [{
                   format: "code_128_reader",
@@ -268,9 +268,7 @@ $(function() {
 
   Quagga.onDetected(function(result) {
       var code = result.codeResult.code;
-
-
-if (code.length===17 && !isNaN(code) && code.endsWith("101")){
+if (code.length===17 && !isNaN(code)){
   ScanCode=code
       if (App.lastResult !== code) {
           App.lastResult = code;
