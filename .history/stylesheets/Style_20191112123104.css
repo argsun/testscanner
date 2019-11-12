@@ -275,8 +275,8 @@ canvas.drawing, canvas.drawingBuffer {
   }
   /* line 27, ../sass/phone/_viewport.scss */
   #result_strip ul.thumbnails > li .thumbnail .imgWrapper {
-    width: 130px;
-    height: 130px;
+    width: 75px;
+    height: 75p;
     overflow: hidden;
   }
   /* line 31, ../sass/phone/_viewport.scss */

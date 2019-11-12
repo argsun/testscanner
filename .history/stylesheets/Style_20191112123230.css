@@ -283,6 +283,6 @@ canvas.drawing, canvas.drawingBuffer {
   #result_strip ul.thumbnails > li .thumbnail .imgWrapper img {
     margin-top: -25px;
     width: 130px;
-    height: 180px;
+    height: 90p;
   }
 }
