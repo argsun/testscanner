@@ -238,7 +238,7 @@ canvas.drawing, canvas.drawingBuffer {
     box-shadow: none;
   }
 }
-@media (max-width: 603px) {
+@media (max-width: 503px) {
   /* line 5, ../sass/phone/_viewport.scss */
   .reader-config-group {
     width: 100%;
