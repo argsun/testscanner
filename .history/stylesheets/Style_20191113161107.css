@@ -14,9 +14,7 @@
   background-color:#656565;  
   max-height: 100vh;
   overflow-y: auto;
-  color: white;
-  font-family: 'BYekan';
-  src: url('../Fonts/BYekand41d.eot?#') format('eot'), url('../Fonts/BYekan.ttf') format('truetype'), url('../Fonts/BYekan.woff') format('woff');
+  color: white
 }
 
 
