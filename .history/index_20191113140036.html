@@ -73,10 +73,6 @@ if ($_SESSION['USER_NO'] > 0 && HaveMenuAccess('Mobile')) {
                 <div class="modal-content">
                     <span class="close">&times;بسته شدن</span>
                     <div id="interactive" class="viewport"></div>
-                    <label style="display: none">
-                        <span>چراغ قوه</span>
-                        <input type="checkbox" name="settings_torch" />
-                    </label>
                     <div id="result_strip">
                         <ul class="thumbnails"></ul>
                     </div>
@@ -86,7 +82,10 @@ if ($_SESSION['USER_NO'] > 0 && HaveMenuAccess('Mobile')) {
 
                         </fieldset>
                         <fieldset class="reader-config-group">
-
+                            <label style="display: none">
+                                <span>چراغ قوه</span>
+                                <input type="checkbox" name="settings_torch" />
+                            </label>
                             <label>
                                 <span>دوربین</span>
                                 <select name="input-stream_constraints" id="deviceSelection" class="Status">
