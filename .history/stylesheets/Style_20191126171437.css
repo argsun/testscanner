@@ -44,8 +44,7 @@
   cursor: pointer;
 }
 .StatusConfig {
-  font-family: 'BYekan';
-  src: url('../Fonts/BYekand41d.eot?#') format('eot'), url('../Fonts/BYekan.ttf') format('truetype'), url('../Fonts/BYekan.woff') format('woff');
+ 
   background-color: #656565;
   color: white;
   text-align: center;
